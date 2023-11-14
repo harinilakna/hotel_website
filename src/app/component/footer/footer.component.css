@@ -1,0 +1,59 @@
+.footer-main{
+   display: flex; 
+   align-items: center;
+   justify-content: center;
+   background-color: rgba(184, 182, 182, 0.509);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.footer-div2{
+    height: auto;
+    padding: 70px;
+    margin-top: 90px;
+    margin-left:100px;
+    margin-right:100px;
+    margin-bottom: 90px;
+   
+}
+
+.content{
+    width:100%;
+}
+
+.checkbox{
+    display: flex;
+}
+
+.check{
+    border: 1px solid black;
+    box-shadow: none;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin-right: 10px;
+}
+
+h4{
+    color: purple;
+    font-style: italic;
+}
+
+.copyright-footer{
+    text-align: center;
+}
+
+.email-box{
+    height:80px; 
+    width:500px;}
+
+.lable{
+    width:40%;
+}
+
+.scroll{
+   position: relative;
+   left:50%;
+}
+

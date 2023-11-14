@@ -1,0 +1,41 @@
+/* styles for top navbar */
+.flexExpand {
+    flex: 1 1 auto;
+  }
+
+  .logo{
+    width: 40px;
+  }
+
+
+/* styles for bootom navbar */
+  .button-with-icon {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  .bottom-nav{
+    color: rgb(255, 255, 255);
+
+  }
+
+  .button-with-icon:hover{
+    background-color: rgb(246, 246, 243);
+    color: black;
+    height: 68px;
+    border-radius: 0px;
+
+  }
+
+ .item:hover{
+
+    background-color: rgb(103, 88, 3);
+
+  }
+
+  .head-nav{
+
+    background-color: black;
+
+  }

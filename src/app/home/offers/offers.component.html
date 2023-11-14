@@ -1,0 +1,27 @@
+<div class="destination-heading"> 
+  <h2 >Offers</h2> 
+</div>
+<div class="grid">
+  <div class="grid-container mt-4">
+  <div class="card-content" *ngFor="let image of images" fxFlex.xs="100%" fxFlex.sm="33%">
+    <div class="card-image">
+      <img [src]="image.source" alt="{{image.topic}}">
+    </div>
+    <div class="card-info">
+      <p class="category">{{image.category}}</p>
+      <p class="date">{{image.date}}</p>
+      <h3 class="title fw-bold">{{image.topic}}</h3>
+      <p class="content">{{image.content}}</p>
+      <p class="price fw-bold">{{image.offer}}</p>
+      <button type="button" class="btn btn-outline-secondary mt-3">FIND A HOTEL</button>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
