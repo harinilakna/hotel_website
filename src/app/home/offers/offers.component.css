@@ -1,82 +1,59 @@
-.destination-heading{
-  text-align: center;
-  font-size: 2rem;
-  font-family: Roboto, sans-serif;
-  background-color: blanchedalmond;
-  padding-top: 25px;
+
+.tile-container {
+  flex-wrap: wrap; 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+  gap: 35px; /* Adjust the gap between the columns */
+  padding: 60px; 
 }
 
-.destination-heading h2{
-  margin-bottom: 0px;
+.tile {
+  background-color: white;
 }
 
-.grid{
-  display: flex; 
-  justify-content: center; 
-  align-items: center;
-  height:600px;
-  background-color: blanchedalmond;
+.tile img {
+  width: 100%;
+  height: 340px;
 }
 
-.grid-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 15px;
-    width:1300px;
-    
-   
-  }
-  
-  .card-content {
-    flex: 0 0 calc(30% - 10px); 
-    margin-bottom: 10px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 0px;
-    overflow: hidden;
-    transition: all 0.3s;
-    width:360px;
-    display: flex;
-    flex-direction: column;
-    
-  }
-  
-  .card-content:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transform: translateY(-4px);
-  }
-  
-  .card-image img {
-    width:100%;
-    height:175px;
-  }
-  
-  .card-info {
-    padding: 5px;
-    text-align: center;
-    
-   
-  }
-  
-.title {
+.topic{
   font-size: 18px;
   margin: 10px 0;
-  }
-  
-  p.content {
-    font-size: 14px;
-  }
-  
-  .price {
-    font-size: 16px;
-  }
-  
-  button {
-    border-color: goldenrod;
-    color:goldenrod;
-    margin-top: auto;
-    display: inline-block;
-    
+}
+
+
+.tile-info{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+}
+
+.tile:hover{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-4px);
+
+}
+
+.destination-heading{
+  display: flex;
+  justify-content: center;
+}
+
+.offers{
+  background-color: rgba(215, 216, 216, 0.586);
+}
+
+/* Display a single column in mobile view */
+@media (max-width: 768px) {
+  .tile-container {
+    grid-template-columns: 1fr; 
   }
 
+  .tile img {
+    width: 100%;
+    height: 250px;
+  }
+  
+}

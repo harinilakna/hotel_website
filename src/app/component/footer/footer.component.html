@@ -1,8 +1,8 @@
-<div class="footer-main" [ngStyle]="{backgroundImage:'url(assets/bg-img.jpg)'}">
+<div class="footer-main"[ngStyle]="{backgroundImage:'url(assets/bg-img.jpg)'}" >
 <div class="footer-div2" fxLayout="row wrap" fxLayoutGap="16px"  fxLayout.xs="column" fxLayoutAlign="space-around center">
     <img  src="assets/scroll.png" class="scroll" (click)="scrollToTop()">
-<div class="content">
-            <div fxFlexFill fxFlex.xs="100" fxFlex.gt-sm="30">
+<div class="content" fxLayout="row" fxLayout.xs="column" fxLayoutGap="30px">
+            <div>
                 <div class="details1"> 
                     <h4>Corporate Information</h4> 
                     <p>Cinnamon Hotels & Resorts</p> 
@@ -19,7 +19,7 @@
                
             </div>
           
-            <div fxFlexFill fxFlex.xs="100" fxFlex.gt-sm="30">
+            <div>
                 <div class="details2"> 
                     <h4>News & Awards</h4> 
                     <p>News</p> 
@@ -31,7 +31,7 @@
                 </div> 
             </div>
           
-            <div fxFlexFill fxFlex.xs="100" fxFlex.gt-sm="30">
+            <div >
                 <div class="details3"> 
                     <h4>Data Privacy & Security Policy</h4> 
                     <p>Terms & Conditions</p> 
@@ -54,7 +54,7 @@
                 </div> 
             </div>
         </div>
-            <div class=" mt-5" fxLayout="column" > 
+            <div class="second mt-5" fxLayout="column" fxLayout.xs="column" > 
                 <h4>Get Cinnamon in your inbox</h4> 
                 <div class="icons" fxLayout="row wrap">
                     <div class="input-group mb-3 email-box">
@@ -70,7 +70,7 @@
 
             </div> 
           
-            <div class="copyright-footer mt-5"> 
+            <div class="copyright-footer mt-5"  fxLayout="row" fxLayout.xs="column"> 
                 <h6>Copyright@2023</h6> 
             </div> 
    </div> 

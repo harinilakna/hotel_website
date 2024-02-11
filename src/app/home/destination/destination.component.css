@@ -107,3 +107,25 @@ div.map {
   .inner-card {
     width: 100%;
   }}
+
+  @media only screen and (max-width: 768px) {
+    .card-content {
+      width: 100%;
+    }
+  
+    .inner-card {
+      width: 100%;
+    }
+
+    div.map {
+        left: 15%; /* Move div.absolute 50% to the right */
+        width:150px;
+        height:200px;
+    } 
+
+    div.absolute {     
+      left: 80%; /* Move div.absolute 50% to the right */ 
+    }
+    
+  
+  }

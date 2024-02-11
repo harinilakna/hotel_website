@@ -3,8 +3,8 @@
    align-items: center;
    justify-content: center;
    background-color: rgba(184, 182, 182, 0.509);
-   background-repeat: no-repeat;
    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .footer-div2{
@@ -16,6 +16,8 @@
     margin-bottom: 90px;
    
 }
+   
+
 
 .content{
     width:100%;
@@ -57,3 +59,24 @@ h4{
    left:50%;
 }
 
+@media (max-width: 768px) {
+ 
+    .footer-div2{
+    padding: 0;
+    margin: 0;
+    padding-top: 50px;
+    }
+
+    .second{
+        width: 300px;
+    }
+
+    .checkbox label{
+        color: rgb(242, 242, 240);  
+    }
+    .scroll{
+        position: relative;
+        left:50%;
+     }
+  }
+  

@@ -4,38 +4,21 @@
   }
 
   .logo{
-    width: 40px;
+    width: 35px;
   }
 
-
-/* styles for bootom navbar */
-  .button-with-icon {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
+  .icon{
+   font-size:  25px;
   }
 
-  .bottom-nav{
-    color: rgb(255, 255, 255);
-
+  /* Display a single column in mobile view */
+@media (max-width: 768px) {
+ 
+  mat-toolbar{
+    height: auto;
   }
 
-  .button-with-icon:hover{
-    background-color: rgb(246, 246, 243);
-    color: black;
-    height: 68px;
-    border-radius: 0px;
-
+  .text{
+    display: none;
   }
-
- .item:hover{
-
-    background-color: rgb(103, 88, 3);
-
-  }
-
-  .head-nav{
-
-    background-color: black;
-
-  }
+}

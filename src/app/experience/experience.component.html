@@ -1,14 +1,14 @@
-<div class="destination-heading mt-4"> 
-  <h2>Experience someting new</h2> 
-  <p>Close to home or across the world, Hilton is there for you with memorable offers and experiences. Check out what's new</p> 
-</div>
-<div class="grid">
-<div class="grid-container mt-3">
-  <div class="card" *ngFor="let card of cardData" fxFlex.xs="100%" fxFlex.sm="33%">
-    <div class="card-image">
-      <img [src]="card.image" alt="{{card.title}}">
-      <h3 class="title fw-bold">{{card.title}}</h3>
-    </div>      
-    </div>
+
+<div class="offers">
+  <div class="destination-heading" style="margin-left: 55px;"> 
+    <h2 class="mt-5">Experience someting new</h2> 
+    <p class="mt-2">Close to home or across the world, Hilton is there for you with memorable offers and experiences. Check out what's new</p> 
+  </div>
+<div class="tile-container">
+  <div  *ngFor="let card of cardData" class="tile" style="background-color: yellowgreen;">
+       <img [src]="card.image" alt="{{card.title}}" /> 
+      <h3 class="title fw-bold">{{card.title}}</h3>     
   </div>
 </div>
+</div>
+

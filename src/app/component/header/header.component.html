@@ -1,85 +1,27 @@
 
-<mat-toolbar>
+<mat-toolbar fxLayoutAlign="center center" style="background-color: #E0BFB8 ">
   <!-- create top header -->
-    <mat-toolbar-row fxLayoutAlign="center center" style="background-color: beige" >
-      <div fxLayout="row" style="background-color: beige" fxFlex="75%">
+      <div fxLayout="row" fxLayout.lt-md="column" fxFlex="100%">
         <!-- adding a logo -->
         <span fxLayout="row"><img class="logo" src="assets/logo.png"><h1 class="mt-2">SHANGRI-LA</h1></span>
         <span class="flexExpand"></span>
-        <div class="inline mt-2" fxLayout="row" fxLayoutGap="10px" >
+        <div class="inline mt-2" fxLayout="row" fxLayoutGap="10px">
           <mat-icon class="icon">person_outline</mat-icon>
-          <span>Sign In</span>
+          <span class="text">Sign In</span>
           <span>|</span>
           <span>Join Now</span>
           <span>|</span>
           <span>Find Reservations</span>
           <span>|</span>
           <mat-icon class="icon">public</mat-icon>
-          <span>English</span>
-          <span>|</span>
-          <span>SGD</span>
+          <span class="text">English</span>
           <span>|</span>
           <mat-icon class="icon"> stay_primary_portrait</mat-icon>
         </div>
      </div>
     <!-- create bottom header -->
-  </mat-toolbar-row>
-    <mat-toolbar-row class="head-nav" fxLayoutAlign="center center">
-      <div class="bottom-nav" fxLayout="row" fxFlex="75%" fxLayoutGap="20px">
-          <mat-menu #menu="matMenu">
-            <button class="item" mat-menu-item routerLink="#"><h5>About The Hotel</h5></button>
-            <button class="item" mat-menu-item routerLink="#">Overview</button>
-            <button class="item" mat-menu-item routerLink="#">Explore Colombo</button>
-            <button class="item" mat-menu-item routerLink="#">Service & Facilities</button>
-            <button class="item" mat-menu-item routerLink="#">Map & Direction</button>
-          </mat-menu>
-          <button mat-button [matMenuTriggerFor]="menu" class="button-with-icon" fxLayoutGap="5px">ABOUT<mat-icon class="mt-1">keyboard_arrow_down</mat-icon>
-          </button>
-          
-          <mat-menu #menu2="matMenu">
-            <button mat-menu-item routerLink="/about">Overview</button>
-            <button mat-menu-item routerLink="/services">Services</button>
-          </mat-menu>
-          <button mat-button [matMenuTriggerFor]="menu2" class="button-with-icon" fxLayoutGap="5px">ROOMS & SUITES<mat-icon class="mt-1">keyboard_arrow_down</mat-icon>
-          </button>
 
-          <mat-menu #menu3="matMenu">
-            <button mat-menu-item routerLink="/about">About</button>
-            <button mat-menu-item routerLink="/services">Services</button>
-          </mat-menu>
-          <button mat-button [matMenuTriggerFor]="menu3" class="button-with-icon" fxLayoutGap="5px">DINNIG<mat-icon class="mt-1">keyboard_arrow_down</mat-icon>
-          </button>
-         
-          <mat-menu #menu4="matMenu">
-            <button mat-menu-item routerLink="/about">About</button>
-            <button mat-menu-item routerLink="/services">Services</button>
-          </mat-menu>
-          <button mat-button [matMenuTriggerFor]="menu4" class="button-with-icon" fxLayoutGap="5px">EXPERIENCE<mat-icon class="mt-1">keyboard_arrow_down</mat-icon>
-          </button>
-
-          <mat-menu #menu5="matMenu">
-            <button mat-menu-item routerLink="/about">About</button>
-            <button mat-menu-item routerLink="/services">Services</button>
-          </mat-menu>
-          <button mat-button [matMenuTriggerFor]="menu5" class="button-with-icon" fxLayoutGap="5px">EVENTS<mat-icon class="mt-1">keyboard_arrow_down</mat-icon>
-          </button>
-
-          
-          <button mat-button routerLink="/gallery">GALLERY</button>
-
-          <button mat-button routerLink="/offers">OFFERS</button>
-
-          <mat-menu #menu6="matMenu">
-            <button mat-menu-item routerLink="/about">About</button>
-            <button mat-menu-item routerLink="/services">Services</button>
-          </mat-menu>
-          <button mat-button [matMenuTriggerFor]="menu6" class="button-with-icon" fxLayoutGap="5px">MORE<mat-icon class="mt-1">keyboard_arrow_down</mat-icon>
-          </button>
-
-          <button type="button" class="btn btn-outline-secondary ms-3">FIND A HOTEL</button>
-       </div>
-    </mat-toolbar-row>
   </mat-toolbar>
 
 
- 
+
